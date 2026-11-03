@@ -1,91 +1,77 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Xinyu Gong | 个人主页</title>
+  <meta name="description" content="Xinyu Gong is a Ph.D. student researching multimodal image matching and registration and remote sensing image processing.">
+  <title>Xinyu Gong | Academic Homepage</title>
   <style>
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, "Microsoft YaHei", sans-serif;
-      color: #333;
-      background: #fff;
-      line-height: 1.8;
-    }
-    .layout {
-      max-width: 1100px;
-      margin: 60px auto;
-      padding: 0 24px;
-      display: grid;
-      grid-template-columns: 230px 1fr;
-      gap: 60px;
-    }
+    body { margin: 0; font-family: Arial, "Microsoft YaHei", sans-serif; color: #333; background: #fff; line-height: 1.8; }
+    .layout { max-width: 1100px; margin: 60px auto; padding: 0 24px; display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 60px; }
     aside { align-self: start; }
     aside h1 { margin-bottom: 4px; }
     aside p { margin: 8px 0; }
+    .portrait { width: 180px; max-width: 100%; height: auto; border-radius: 12px; }
     a { color: #1772d0; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    section { margin-bottom: 36px; }
+    a:hover, a:focus-visible { text-decoration: underline; }
+    section { margin-bottom: 36px; scroll-margin-top: 24px; }
     h2 { border-bottom: 1px solid #ddd; padding-bottom: 8px; }
-    .paper { margin: 20px 0; }
-    .muted { color: #777; }
+    .paper { margin: 24px 0; }
+    .paper h3 { font-size: 17px; line-height: 1.5; margin-bottom: 8px; }
+    .paper p { margin: 6px 0; }
+    .muted { color: #666; }
+    nav { margin-top: 24px; }
+    nav a { display: block; padding: 3px 0; }
+    li { margin-bottom: 10px; }
     @media (max-width: 700px) {
-      .layout {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        margin: 28px auto;
-      }
+      .layout { grid-template-columns: 1fr; gap: 24px; margin: 28px auto; }
+      nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
     }
   </style>
 </head>
 <body>
   <div class="layout">
     <aside>
-      <!-- 上传 avatar.jpg 后，取消下面这行的注释即可显示头像 -->
-      <img src="avatar.jpg" alt="Xinyu Gong" width="180"
-                style="border-radius: 12px;">
+      <img class="portrait" src="avatar.jpg" alt="Xinyu Gong" width="180">
       <h1>Xinyu Gong</h1>
-      <p class="muted">待填写：学校 / 单位</p>
-      <p>待填写：专业 / 职位</p>
-      <p><a href="https://github.com/Xinyu-Gong">GitHub</a></p>
-      <!-- 将下面的邮箱替换为你自己的邮箱 -->
-      <!-- <p><a href="mailto:you@example.com">Email</a></p> -->
+      <p><strong>Ph.D. Student</strong></p>
+      <p class="muted">University of Chinese Academy of Sciences</p>
+      <p class="muted">Shenyang Institute of Automation,<br>Chinese Academy of Sciences</p>
+      <p class="muted">Shenyang, China</p>
+      <p><a href="https://github.com/Xinyu-Gong">GitHub</a> · <a href="https://orcid.org/0009-0003-0868-2472" rel="me">ORCID</a></p>
+      <nav aria-label="Page sections">
+        <a href="#about">About Me</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+      </nav>
     </aside>
-
     <main>
-      <section>
+      <section id="about">
         <h2>About Me</h2>
-        <p>你好！我是 Xinyu Gong。这里填写个人介绍、教育背景和研究经历。</p>
-        <p>我的研究方向包括：待填写。</p>
+        <p>Hi! I am Xinyu Gong, a Ph.D. student at the University of Chinese Academy of Sciences, conducting my research at the Shenyang Institute of Automation, Chinese Academy of Sciences. I received my B.S. degree in Automation from Harbin Institute of Technology in 2024.</p>
+        <p>My research focuses on <strong>multimodal image matching and registration</strong>, as well as <strong>remote sensing image processing</strong>. If you are interested in academic collaboration, please feel free to contact me.</p>
       </section>
-
-      <section>
-        <h2>News</h2>
-        <ul>
-          <li>我的个人主页上线了！</li>
-        </ul>
-      </section>
-
-      <section>
+      <section id="publications">
         <h2>Publications</h2>
         <article class="paper">
-          <strong>待填写：论文标题</strong><br>
-          待填写：作者列表<br>
-          <em>待填写：期刊或会议、年份</em>
-          <p>待填写：论文简介及论文、代码链接。</p>
+          <h3><a href="https://doi.org/10.1109/JSTARS.2026.3726024">Multimodal Remote Sensing Image Registration via Radiometric-Agnostic Geometric Discrepancy Estimation</a></h3>
+          <p><strong>Xinyu Gong</strong>, Faling Chen, Yunpeng Liu, Zelin Shi</p>
+          <p><em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, 2026.</p>
+          <p><a href="https://doi.org/10.1109/JSTARS.2026.3726024">Paper</a></p>
+        </article>
+        <article class="paper">
+          <h3><a href="https://doi.org/10.1117/12.3120608">Visible and infrared image registration based on deep geometric similarity evaluation</a></h3>
+          <p><strong>Xinyu Gong</strong>, Faling Chen, Yunpeng Liu, Xueqian Wang, Liang Wang</p>
+          <p><em>Conference paper</em>, 2026.</p>
+          <p><a href="https://doi.org/10.1117/12.3120608">Paper</a></p>
         </article>
       </section>
-
-      <section>
-        <h2>Projects</h2>
-        <p>这里添加项目介绍、图片及代码链接。</p>
-      </section>
-
-      <section>
-        <h2>Honors and Awards</h2>
+      <section id="education">
+        <h2>Education</h2>
         <ul>
-          <li>待填写：获奖时间及奖项名称</li>
+          <li><strong>2024–Present</strong> · Ph.D. student<br>University of Chinese Academy of Sciences</li>
+          <li><strong>2020–2024</strong> · B.S. in Automation<br>Harbin Institute of Technology</li>
         </ul>
       </section>
     </main>
