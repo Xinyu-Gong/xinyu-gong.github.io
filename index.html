@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xinyu Gong | 个人主页</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.8;
+    }
+    .layout {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      gap: 60px;
+    }
+    aside { align-self: start; }
+    aside h1 { margin-bottom: 4px; }
+    aside p { margin: 8px 0; }
+    a { color: #1772d0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    section { margin-bottom: 36px; }
+    h2 { border-bottom: 1px solid #ddd; padding-bottom: 8px; }
+    .paper { margin: 20px 0; }
+    .muted { color: #777; }
+    @media (max-width: 700px) {
+      .layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin: 28px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <!-- 上传 avatar.jpg 后，取消下面这行的注释即可显示头像 -->
+      <!-- <img src="avatar.jpg" alt="Xinyu Gong" width="180"
+                style="border-radius: 12px;"> -->
+      <h1>Xinyu Gong</h1>
+      <p class="muted">待填写：学校 / 单位</p>
+      <p>待填写：专业 / 职位</p>
+      <p><a href="https://github.com/Xinyu-Gong">GitHub</a></p>
+      <!-- 将下面的邮箱替换为你自己的邮箱 -->
+      <!-- <p><a href="mailto:you@example.com">Email</a></p> -->
+    </aside>
+
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>你好！我是 Xinyu Gong。这里填写个人介绍、教育背景和研究经历。</p>
+        <p>我的研究方向包括：待填写。</p>
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <ul>
+          <li>我的个人主页上线了！</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Publications</h2>
+        <article class="paper">
+          <strong>待填写：论文标题</strong><br>
+          待填写：作者列表<br>
+          <em>待填写：期刊或会议、年份</em>
+          <p>待填写：论文简介及论文、代码链接。</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <p>这里添加项目介绍、图片及代码链接。</p>
+      </section>
+
+      <section>
+        <h2>Honors and Awards</h2>
+        <ul>
+          <li>待填写：获奖时间及奖项名称</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
